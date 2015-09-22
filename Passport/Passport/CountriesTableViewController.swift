@@ -26,6 +26,8 @@ class CountriesTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath) as UITableViewCell
         let country = countries[indexPath.row]
         cell.textLabel?.text = country
+        cell.accessoryType = .Checkmark
+        
         return cell
     }
     

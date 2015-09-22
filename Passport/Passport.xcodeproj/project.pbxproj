@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16A0B39A1BB1A23A00E7F2D8 /* us.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16A0B3991BB1A23A00E7F2D8 /* us.jpg */; settings = {ASSET_TAGS = (); }; };
+		16A0B39C1BB1A35600E7F2D8 /* CountriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A0B39B1BB1A35600E7F2D8 /* CountriesTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		16DD4E651BB0CB2700389C07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DD4E641BB0CB2700389C07 /* AppDelegate.swift */; };
 		16DD4E671BB0CB2700389C07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DD4E661BB0CB2700389C07 /* ViewController.swift */; };
 		16DD4E6A1BB0CB2700389C07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16DD4E681BB0CB2700389C07 /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16A0B3991BB1A23A00E7F2D8 /* us.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = us.jpg; path = ../../../../Pictures/us.jpg; sourceTree = "<group>"; };
+		16A0B39B1BB1A35600E7F2D8 /* CountriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesTableViewController.swift; sourceTree = "<group>"; };
 		16DD4E611BB0CB2700389C07 /* Passport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Passport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16DD4E641BB0CB2700389C07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16DD4E661BB0CB2700389C07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,10 +103,12 @@
 			children = (
 				16DD4E641BB0CB2700389C07 /* AppDelegate.swift */,
 				16DD4E661BB0CB2700389C07 /* ViewController.swift */,
+				16A0B39B1BB1A35600E7F2D8 /* CountriesTableViewController.swift */,
 				16DD4E681BB0CB2700389C07 /* Main.storyboard */,
 				16DD4E6B1BB0CB2700389C07 /* Assets.xcassets */,
 				16DD4E6D1BB0CB2700389C07 /* LaunchScreen.storyboard */,
 				16DD4E701BB0CB2700389C07 /* Info.plist */,
+				16A0B3991BB1A23A00E7F2D8 /* us.jpg */,
 			);
 			path = Passport;
 			sourceTree = "<group>";
@@ -229,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16DD4E6F1BB0CB2700389C07 /* LaunchScreen.storyboard in Resources */,
+				16A0B39A1BB1A23A00E7F2D8 /* us.jpg in Resources */,
 				16DD4E6C1BB0CB2700389C07 /* Assets.xcassets in Resources */,
 				16DD4E6A1BB0CB2700389C07 /* Main.storyboard in Resources */,
 			);
@@ -256,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16DD4E671BB0CB2700389C07 /* ViewController.swift in Sources */,
+				16A0B39C1BB1A35600E7F2D8 /* CountriesTableViewController.swift in Sources */,
 				16DD4E651BB0CB2700389C07 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -481,6 +489,7 @@
 				16DD4E8B1BB0CB2700389C07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		16DD4E8C1BB0CB2700389C07 /* Build configuration list for PBXNativeTarget "PassportTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +498,7 @@
 				16DD4E8E1BB0CB2700389C07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		16DD4E8F1BB0CB2700389C07 /* Build configuration list for PBXNativeTarget "PassportUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +507,7 @@
 				16DD4E911BB0CB2700389C07 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

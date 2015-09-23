@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		16A0B39A1BB1A23A00E7F2D8 /* us.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16A0B3991BB1A23A00E7F2D8 /* us.jpg */; settings = {ASSET_TAGS = (); }; };
+		164090EE1BB3427B004114DE /* us.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 164090ED1BB3427B004114DE /* us.jpg */; settings = {ASSET_TAGS = (); }; };
+		164090F01BB34404004114DE /* Passport-Icons in Resources */ = {isa = PBXBuildFile; fileRef = 164090EF1BB34404004114DE /* Passport-Icons */; settings = {ASSET_TAGS = (); }; };
+		16A0B39A1BB1A23A00E7F2D8 /* hi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16A0B3991BB1A23A00E7F2D8 /* hi.jpg */; settings = {ASSET_TAGS = (); }; };
 		16A0B39C1BB1A35600E7F2D8 /* CountriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A0B39B1BB1A35600E7F2D8 /* CountriesTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		16DD4E651BB0CB2700389C07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DD4E641BB0CB2700389C07 /* AppDelegate.swift */; };
 		16DD4E671BB0CB2700389C07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DD4E661BB0CB2700389C07 /* ViewController.swift */; };
@@ -36,7 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		16A0B3991BB1A23A00E7F2D8 /* us.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = us.jpg; path = ../../../../Pictures/us.jpg; sourceTree = "<group>"; };
+		164090ED1BB3427B004114DE /* us.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = us.jpg; path = ../../../../Pictures/NSBE/us.jpg; sourceTree = "<group>"; };
+		164090EF1BB34404004114DE /* Passport-Icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Passport-Icons"; sourceTree = SOURCE_ROOT; };
+		16A0B3991BB1A23A00E7F2D8 /* hi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hi.jpg; path = ../../../../Pictures/hi.jpg; sourceTree = "<group>"; };
 		16A0B39B1BB1A35600E7F2D8 /* CountriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesTableViewController.swift; sourceTree = "<group>"; };
 		16DD4E611BB0CB2700389C07 /* Passport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Passport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16DD4E641BB0CB2700389C07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,9 +110,11 @@
 				16A0B39B1BB1A35600E7F2D8 /* CountriesTableViewController.swift */,
 				16DD4E681BB0CB2700389C07 /* Main.storyboard */,
 				16DD4E6B1BB0CB2700389C07 /* Assets.xcassets */,
+				164090EF1BB34404004114DE /* Passport-Icons */,
 				16DD4E6D1BB0CB2700389C07 /* LaunchScreen.storyboard */,
 				16DD4E701BB0CB2700389C07 /* Info.plist */,
-				16A0B3991BB1A23A00E7F2D8 /* us.jpg */,
+				164090ED1BB3427B004114DE /* us.jpg */,
+				16A0B3991BB1A23A00E7F2D8 /* hi.jpg */,
 			);
 			path = Passport;
 			sourceTree = "<group>";
@@ -235,9 +241,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				16DD4E6F1BB0CB2700389C07 /* LaunchScreen.storyboard in Resources */,
-				16A0B39A1BB1A23A00E7F2D8 /* us.jpg in Resources */,
+				16A0B39A1BB1A23A00E7F2D8 /* hi.jpg in Resources */,
 				16DD4E6C1BB0CB2700389C07 /* Assets.xcassets in Resources */,
+				164090F01BB34404004114DE /* Passport-Icons in Resources */,
 				16DD4E6A1BB0CB2700389C07 /* Main.storyboard in Resources */,
+				164090EE1BB3427B004114DE /* us.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

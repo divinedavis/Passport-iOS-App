@@ -9,8 +9,11 @@
 /* Begin PBXBuildFile section */
 		164090EE1BB3427B004114DE /* us.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 164090ED1BB3427B004114DE /* us.jpg */; settings = {ASSET_TAGS = (); }; };
 		164090F01BB34404004114DE /* Passport-Icons in Resources */ = {isa = PBXBuildFile; fileRef = 164090EF1BB34404004114DE /* Passport-Icons */; settings = {ASSET_TAGS = (); }; };
+		164090F21BB35891004114DE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 164090F11BB35891004114DE /* MapKit.framework */; };
+		164090F41BB35899004114DE /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 164090F31BB35899004114DE /* CoreLocation.framework */; };
 		16A0B39A1BB1A23A00E7F2D8 /* hi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 16A0B3991BB1A23A00E7F2D8 /* hi.jpg */; settings = {ASSET_TAGS = (); }; };
 		16A0B39C1BB1A35600E7F2D8 /* CountriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A0B39B1BB1A35600E7F2D8 /* CountriesTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		16B43FA61BB6218700197879 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B43FA51BB6218700197879 /* MapViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		16DD4E651BB0CB2700389C07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DD4E641BB0CB2700389C07 /* AppDelegate.swift */; };
 		16DD4E671BB0CB2700389C07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16DD4E661BB0CB2700389C07 /* ViewController.swift */; };
 		16DD4E6A1BB0CB2700389C07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16DD4E681BB0CB2700389C07 /* Main.storyboard */; };
@@ -40,8 +43,11 @@
 /* Begin PBXFileReference section */
 		164090ED1BB3427B004114DE /* us.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = us.jpg; path = ../../../../Pictures/NSBE/us.jpg; sourceTree = "<group>"; };
 		164090EF1BB34404004114DE /* Passport-Icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "Passport-Icons"; sourceTree = SOURCE_ROOT; };
+		164090F11BB35891004114DE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		164090F31BB35899004114DE /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		16A0B3991BB1A23A00E7F2D8 /* hi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = hi.jpg; path = ../../../../Pictures/hi.jpg; sourceTree = "<group>"; };
 		16A0B39B1BB1A35600E7F2D8 /* CountriesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesTableViewController.swift; sourceTree = "<group>"; };
+		16B43FA51BB6218700197879 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		16DD4E611BB0CB2700389C07 /* Passport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Passport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16DD4E641BB0CB2700389C07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16DD4E661BB0CB2700389C07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				164090F41BB35899004114DE /* CoreLocation.framework in Frameworks */,
+				164090F21BB35891004114DE /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +93,8 @@
 		16DD4E581BB0CB2700389C07 = {
 			isa = PBXGroup;
 			children = (
+				164090F31BB35899004114DE /* CoreLocation.framework */,
+				164090F11BB35891004114DE /* MapKit.framework */,
 				16DD4E631BB0CB2700389C07 /* Passport */,
 				16DD4E781BB0CB2700389C07 /* PassportTests */,
 				16DD4E831BB0CB2700389C07 /* PassportUITests */,
@@ -108,6 +118,7 @@
 				16DD4E641BB0CB2700389C07 /* AppDelegate.swift */,
 				16DD4E661BB0CB2700389C07 /* ViewController.swift */,
 				16A0B39B1BB1A35600E7F2D8 /* CountriesTableViewController.swift */,
+				16B43FA51BB6218700197879 /* MapViewController.swift */,
 				16DD4E681BB0CB2700389C07 /* Main.storyboard */,
 				16DD4E6B1BB0CB2700389C07 /* Assets.xcassets */,
 				164090EF1BB34404004114DE /* Passport-Icons */,
@@ -273,6 +284,7 @@
 				16DD4E671BB0CB2700389C07 /* ViewController.swift in Sources */,
 				16A0B39C1BB1A35600E7F2D8 /* CountriesTableViewController.swift in Sources */,
 				16DD4E651BB0CB2700389C07 /* AppDelegate.swift in Sources */,
+				16B43FA61BB6218700197879 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

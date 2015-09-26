@@ -181,15 +181,15 @@
             <objects>
                 <tableViewController id="YJn-Xd-bOJ" customClass="CountriesTableViewController" customModule="Passport" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="bZg-05-WoU">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="SHV-bD-4Js">
-                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="92" width="768" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SHV-bD-4Js" id="Vl0-gl-57k">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="768" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -199,12 +199,48 @@
                             <outlet property="delegate" destination="YJn-Xd-bOJ" id="7tC-AY-kbl"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Countries Visited" id="5qZ-ke-nhO"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationItem key="navigationItem" title="Countries Visited" id="5qZ-ke-nhO">
+                        <barButtonItem key="rightBarButtonItem" title="Map" id="Mi3-Jz-lOm">
+                            <connections>
+                                <segue destination="qib-mm-R4n" kind="show" id="RZb-Mw-Skn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hcf-Ri-GNQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2011.875" y="386.61971830985914"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="cUJ-UU-Aew">
+            <objects>
+                <viewController id="qib-mm-R4n" customClass="MapViewController" customModule="Passport" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jtm-qR-3Cm"/>
+                        <viewControllerLayoutGuide type="bottom" id="N7d-A0-vLh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hCP-zD-RKg">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="wy7-W9-UmL">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                                <connections>
+                                    <outlet property="delegate" destination="qib-mm-R4n" id="uXv-Mk-yoW"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="myMapView" destination="wy7-W9-UmL" id="j6S-A5-J9i"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CQi-vL-dCE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2855" y="386"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="z0j-Cr-Lir">

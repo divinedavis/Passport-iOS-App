@@ -34,7 +34,11 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         
         let locations = [italy, england, norway, spain]
         
-        myMapView.addAnnotation(locations)
+        myMapView.addAnnotations(locations)
+        
+        var myRegion = MKCoordinateRegionMakeWithDistance(italy.coordinate, 5500000, 5500000)
+        
+        myMapView.setRegion(myRegion, animated: true)
         
     }
     

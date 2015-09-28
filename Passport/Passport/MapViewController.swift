@@ -16,6 +16,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //this is setting italy as an annotation
         let italy = MKPointAnnotation()
         italy.coordinate = CLLocationCoordinate2D(latitude: 41.8947400, longitude: 12.4839000)
         italy.title = "Rome, Italy"
@@ -36,12 +37,16 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         spain.coordinate = CLLocationCoordinate2D(latitude: 40.41694, longitude: -3.70081)
         spain.title = "Madrid, Spain"
         
+        //making an array with the locations i provided TYPE SAFE!
         let locations = [italy, england, norway, spain]
         
+        //telling myMapView that i want to add the annotations of the locations array
         myMapView.addAnnotations(locations)
         
+        //created a variable that uses the coordinates of italty, then zooms out so you can see the rest of the annotations
         let myRegion = MKCoordinateRegionMakeWithDistance(italy.coordinate, 5500000, 5500000)
         
+        //telling myMapView that i want to use the region of the variable i just made
         myMapView.setRegion(myRegion, animated: true)
         
     }

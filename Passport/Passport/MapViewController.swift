@@ -20,12 +20,16 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         italy.coordinate = CLLocationCoordinate2D(latitude: 41.8947400, longitude: 12.4839000)
         italy.title = "Rome, Italy"
         
+        //england pin
         let england = MKPointAnnotation()
         england.coordinate = CLLocationCoordinate2D(latitude: 51.5085300, longitude: -0.1257400)
         england.title = "London, England"
         
+        //created a norway annotation
         let norway = MKPointAnnotation()
+        //made the location of norway
         norway.coordinate = CLLocationCoordinate2D(latitude: 59.914225, longitude: 10.75256)
+        //made a pop up title come up when you tap the pin
         norway.title = "Oslo, Norway"
         
         let spain = MKPointAnnotation()

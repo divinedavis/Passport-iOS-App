@@ -53,7 +53,9 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     
     func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
         let pin = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "pinIdentifier")
+        
         pin.canShowCallout = true
+        
         return pin
         
     }
